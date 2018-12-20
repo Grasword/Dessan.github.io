@@ -27,11 +27,14 @@ img {
   padding: 10px 5px;
   background: transparent; }
 
+.button:hover {
+  border: 2px solid #b8dc58;
+  color: #b8dc58; }
+
 /* Header block ---------------------------------------------------------------- */
 .header {
   position: relative;
   background-image: url("../img/background1.png");
-  /*linear-gradient(to bottom, rgba(30,87,153,0.5) 0%,rgba(125,185,232,0.2) 100%),*/
   background-size: cover; }
 
 .header:before {
@@ -61,8 +64,7 @@ img {
   padding: 30px 15px; }
   .headerBlock__logo {
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    align-items: center; }
   .headerBlock__logoImg {
     max-width: 50px; }
   .headerBlock__logoText {
@@ -82,11 +84,11 @@ img {
   text-decoration: none; }
 
 .headerContent {
-  margin: 0 auto;
+  margin: 165px auto 0 auto;
   max-width: 775px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 70px; }
   .headerContent__headline h1 {
-    margin-top: 165px;
     margin-bottom: 22px;
     color: white; }
   .headerContent__separator {
@@ -99,8 +101,7 @@ img {
     margin-bottom: 50px;
     font-size: 14px; }
   .headerContent__dotnav {
-    padding-top: 125px;
-    padding-bottom: 70px; }
+    padding-top: 125px; }
   .headerContent__dotnav div {
     display: inline-block;
     padding: 5px;
@@ -166,7 +167,8 @@ img {
 
 .expertise {
   padding-top: 70px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 100px; }
 
 .expertiseTitle p {
   margin-top: 15px;
@@ -181,10 +183,9 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  box-shadow: inset 0 0 0 3px white;
-  margin-bottom: 100px; }
+  box-shadow: inset 0 0 0 3px white; }
   .expertiseContent__item {
-    flex: 0 1 33.3%;
+    flex: 1 1 33.3%;
     border: 1px solid rgba(192, 192, 192, 0.75);
     padding-right: 30px;
     padding-left: 30px;
@@ -256,8 +257,12 @@ img {
   .teamButton p {
     margin-bottom: 25px; }
 
+.works {
+  padding-top: 70px;
+  margin-bottom: 70px; }
+
 .worksTitle {
-  margin: 70px auto;
+  margin: 0 auto 70px;
   max-width: 960px;
   padding-left: 10px;
   padding-right: 10px;
@@ -277,7 +282,6 @@ img {
 
 .worksButton {
   margin-top: 70px;
-  margin-bottom: 70px;
   text-align: center; }
 
 .testimonials {
@@ -329,3 +333,131 @@ img {
   .slider__item img {
     border: 0 solid red;
     border-radius: 50%; }
+
+.contact {
+  display: flex;
+  margin-bottom: 70px;
+  margin-top: 70px; }
+
+.contactForm {
+  font-size: 14px;
+  padding-right: 10px;
+  max-width: 50%; }
+  .contactForm input {
+    padding: 15px 20px;
+    width: 100%;
+    margin-bottom: 25px; }
+  .contactForm textarea {
+    padding: 15px 20px;
+    width: 100%;
+    margin-bottom: 20px; }
+  .contactForm h2 {
+    margin-bottom: 35px; }
+
+.contactClient {
+  margin-left: 80px; }
+  .contactClient h2 {
+    font-weight: normal;
+    padding-left: 20px; }
+
+.contactClientLogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; }
+  .contactClientLogos__item {
+    flex: 1 1 100%;
+    padding: 0 20px; }
+  .contactClientLogos__item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.footer {
+  position: relative;
+  background-image: url("../img/background_footer.png");
+  background-size: cover;
+  color: white; }
+
+.footer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #120d33;
+  opacity: .8; }
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px; }
+  .footerContent__item {
+    flex: 1 1 32%; }
+  .footerContent__left {
+    margin-right: 10px; }
+    .footerContent__left p {
+      padding-top: 20px;
+      line-height: 1.7;
+      font-weight: bold; }
+  .footerContent__center {
+    margin-right: 10px;
+    margin-left: 10px; }
+    .footerContent__center p {
+      line-height: 1.7;
+      padding-bottom: 20px; }
+    .footerContent__center .footerPhone {
+      display: flex; }
+      .footerContent__center .footerPhone img {
+        max-height: 21px;
+        padding-right: 15px; }
+    .footerContent__center .footerCentertTitle {
+      padding-top: 26px;
+      padding-bottom: 40px;
+      font-size: 15px; }
+  .footerContent__right {
+    margin-left: 10px; }
+    .footerContent__right .footerRightTitle {
+      padding-top: 26px;
+      padding-bottom: 40px;
+      font-size: 15px;
+      font-weight: bold; }
+  .footerContent input {
+    padding: 15px;
+    width: 75%; }
+  .footerContent button {
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 22px;
+    background: rgba(188, 180, 210, 0.66); }
+  .footerContent .footerIcons {
+    padding-top: 25px;
+    display: flex; }
+    .footerContent .footerIcons div {
+      border: 1px solid white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px; }
+    .footerContent .footerIcons img {
+      display: block;
+      margin: 12px auto; }
+
+.footerCopyright {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  padding-top: 70px; }
+  .footerCopyright a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none; }
+  .footerCopyright a:nth-child(2) {
+    padding-right: 27px;
+    padding-left: 27px; }
+  .footerCopyright__right {
+    text-align: right; }
