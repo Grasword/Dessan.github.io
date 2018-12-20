@@ -428,13 +428,18 @@ img {
       font-weight: bold; }
   .footerContent input {
     padding: 15px;
-    width: 75%; }
+    width: 72%;
+    margin-right: 5px; }
   .footerContent button {
+    position: relative;
+    top: 6px;
     font-size: 16px;
     text-decoration: none;
     border: none;
     padding: 10px 22px;
     background: rgba(188, 180, 210, 0.66); }
+  .footerContent button:hover {
+    background: rgba(233, 224, 255, 0.71); }
   .footerContent .footerIcons {
     padding-top: 25px;
     display: flex; }
@@ -451,7 +456,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-bottom: 70px;
-  padding-top: 70px; }
+  padding-top: 60px; }
   .footerCopyright a {
     font-size: 14px;
     color: white;
