@@ -544,6 +544,9 @@ img {
     .footerCopyright {
       justify-content: center;
       padding-top: 45px; } }
+  @media screen and (max-width: 580px) {
+    .footerCopyright__left {
+      padding-bottom: 15px; } }
   .footerCopyright a {
     font-size: 14px;
     color: white;
