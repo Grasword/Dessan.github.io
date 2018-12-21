@@ -551,6 +551,10 @@ img {
   .footerCopyright a:nth-child(2) {
     padding-right: 27px;
     padding-left: 27px; }
+    @media screen and (max-width: 400px) {
+      .footerCopyright a:nth-child(2) {
+        padding-right: 15px;
+        padding-left: 15px; } }
   .footerCopyright__right {
     text-align: right; }
 
